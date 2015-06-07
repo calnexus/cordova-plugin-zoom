@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-zoom",
+  "version": "1.0.1-dev",
+  "description": "Cordova ZOOM Plugin",
+  "cordova": {
+    "id": "cordova-plugin-zoom",
+    "platforms": [
+      "android",
+      "ios",
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlachmish/cordova-plugin-zoom.git"
+  },
+  "keywords": [
+    "cordova",
+    "zoom",
+    "cordova-android",
+    "cordova-ios",
+  ],
+  "author": "Matan Lachmish",
+  "license": "Apache 2.0"
+}
