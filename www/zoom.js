@@ -53,22 +53,20 @@ function Device() {
  * @param {Function} successCallback The function to call when the heading data is available
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
-Zoom.prototype.init = function(appKey, appSecret, sdkDomain, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "Zoom", "init", [appKey, appSecret, sdkDomain]);
+Zoom.prototype.initService = function(appKey, appSecret, sdkDomain, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, "Zoom", "initService", [appKey, appSecret, sdkDomain]);
 };
 
 /**
  * Initialize ZOOM service
  *
- * @param {Function} userID The user idetifier
  * @param {Function} userName Display name
- * @param {Function} userToken Authentication token
  * @param {Function} meetingNumber Meeting idetifier to be joint
  * @param {Function} successCallback The function to call when the heading data is available
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
-Zoom.prototype.joinMeeting = function(userID, userName, userToken, meetingNumber, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "Zoom", "joinMeeting", [userID, userName, userToken, meetingNumber]);
+Zoom.prototype.joinMeeting = function(userName, meetingNumber, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, "Zoom", "joinMeeting", [userName, meetingNumber]);
 };
 
 /**
