@@ -2,7 +2,6 @@
 #import <Cordova/CDVPlugin.h>
 
 @interface CDVZoom : CDVPlugin
-{}
 
 + (NSString*)cordovaVersion;
 
